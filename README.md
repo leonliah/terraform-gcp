@@ -3,23 +3,6 @@
 ## Create a VPC
 ### terraform code
 ```
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "3.5.0"
-    }
-  }
-}
-
-provider "google" {
-  credentials = file("test-project.json")
-
-  project = "test-project-352904"
-  region  = "us-central1"
-  zone    = "us-central1-a"
-}
-
 resource "google_compute_network" "vpc_network" {
   name = "terraform-network"
 }
