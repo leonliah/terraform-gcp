@@ -1,5 +1,9 @@
 *.backup
 .swp
 .terraform
+.terraform/*
 .DS_Store
 test-project.json
+terraform.tfstate.backup
+terraform.tfstate
+.terraform.lock.hcl

@@ -1,0 +1,4 @@
+project_id = "test-project-352904"
+project_region = "us-central1"
+project_zone = "us-central1-a"
+project_credential = "test-project.json"

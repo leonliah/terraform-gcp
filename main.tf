@@ -8,17 +8,18 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("test-project.json")
+  credentials = file(var.project_credential)
 
-  project = "test-project-352904"
-  region  = "us-central1"
-  zone    = "us-central1-a"
+  project = var.project_id
+  region  = var.project_region
+  zone    = var.project_zone
 }
 
 resource "google_compute_network" "vpc_network" {
   name = "terraform-network"
 }
 
+/**
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
   machine_type = "f1-micro"
@@ -35,6 +36,6 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
 }
-
+*/
 
 
