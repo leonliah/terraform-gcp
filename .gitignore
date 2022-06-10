@@ -1,0 +1,4 @@
+*.backup
+.swp
+.terraform
+.DS_Store
